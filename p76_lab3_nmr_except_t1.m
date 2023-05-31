@@ -282,7 +282,7 @@ fc70_t2s_eqn=['y=',num2str(fc70_T2S,4),'x+',num2str(fc70_T2S_int),'; R-squared='
 subplot(1,2,2)
 plot(fc70_t2s_mdl)
 hold on
-errorbar(fc70_t2s_m_linearized,fc70_t2s_t_lin,-err_fc70_t2s_t,err_fc70_t2s_t,-err_fc70_t2s_m_linearized,err_fc70_t2s_m_linearized)
+errorbar(fc70_t2s_m_linearized,fc70_t2s_t_lin,-err_fc70_t2s_t,err_fc70_t2s_t,-err_fc70_t2s_m_linearized,err_fc70_t2s_m_linearized,'.')
 title('linearized FC70 T_2^* data')
 legend('Data','Fit','Confidence bounds','')
 xlabel('-ln(M_{xy}/M_0) (a dimensionless quantity related to magnetization)')
